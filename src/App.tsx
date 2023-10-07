@@ -1,5 +1,8 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
+import GameGrid from "./components/GameGrid";
+
+// API key: a34fd16e20014cd9ac5937788d363299
 
 function App() {
   return (
@@ -12,9 +15,11 @@ function App() {
       <GridItem area="nav">Dark Mode</GridItem>
       <NavBar />
       <Show above="lg">
-        <GridItem area="aside">Aside</GridItem>
+        <GridItem area="aside" background='gold'>Aside</GridItem>
       </Show>
-      <GridItem area="main">Main</GridItem>
+      <GridItem area="main" background='dodgerblue'>
+        <GameGrid />
+      </GridItem>
     </Grid>
   );
 }
