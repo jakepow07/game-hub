@@ -24,7 +24,7 @@ apiClient.get<FetchGamesResponse>('/games')
   return (
     <> 
     {error && <Text>{error}</Text>}
-    <ul>{games.map(game => <li key={game.id}>{game.name}</li>)}</ul>>
+    <ul>{games.map(game => <li key={game.id}>{game.name}</li>)}</ul>
   
   </>
   )
