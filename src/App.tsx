@@ -15,9 +15,9 @@ function App() {
       <GridItem area="nav">Dark Mode</GridItem>
       <NavBar />
       <Show above="lg">
-        <GridItem area="aside" background='gold'>Aside</GridItem>
+        <GridItem area="aside">Aside</GridItem>
       </Show>
-      <GridItem area="main" background='dodgerblue'>
+      <GridItem area="main"> 
         <GameGrid />
       </GridItem>
     </Grid>
